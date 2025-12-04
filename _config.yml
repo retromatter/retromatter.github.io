@@ -1,0 +1,23 @@
+# Site settings
+title: Retromatter
+description: 'retromatter by junlee' # This pulls directly from your README description
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://retromatter.github.io" # The base hostname & protocol for your site
+
+# Build settings
+# Automatically uses the Jekyll theme defined for GitHub Pages
+# We recommend keeping this and configuring the theme below.
+plugins:
+  - jekyll-feed
+
+# Theme settings
+# If you want to use the default theme (Jekyll-theme-primer for GitHub Pages), you can omit this,
+# but it's good practice to specify it. You can change this later!
+# remote_theme: pages-themes/primer@v9 # Example theme
+
+# Exclude files from the build process
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
