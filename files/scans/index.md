@@ -1,0 +1,150 @@
+---
+layout: default
+title: NOVSCAN - OLD TOR
+---
+
+<div class="container is-max-desktop">
+    <div class="section pt-5 pb-5">
+
+        <h1 class="title is-2 has-text-centered has-text-primary mb-2">
+            Document Imaging Assets
+        </h1>
+        <p class="subtitle is-6 has-text-centered has-text-grey mb-6">
+            Files for a single 3-page document hosted on Google Drive.
+        </p>
+
+        <div class="box has-background-white-ter mb-6">
+            <p class="is-size-6 has-text-weight-medium">
+                <span class="icon has-text-info mr-1"><i class="fas fa-info-circle"></i></span>
+                All files are categorized below by their capture method. The **Scanned Copies** offer the highest archival quality, while **Mobile Captures** preserve the original context and maximum resolution.
+            </p>
+            <p class="is-size-7 has-text-weight-semibold mt-3">
+                👉 **Note:** Click the buttons below the thumbnails to view the hi-resolution image on Google Drive (opens in a new tab).
+            </p>
+        </div>
+
+        <h2 class="title is-4 mb-4 has-text-link">
+            1. High-Resolution Mobile Captures <span class="tag is-link is-light ml-2">Original Context</span>
+        </h2>
+        <p class="subtitle is-7 has-text-grey mb-4">
+            These initial photographs were taken using a mobile phone. They are high-resolution but may contain slight geometric distortions or ambient shadows.
+        </p>
+
+        <div class="columns is-multiline is-mobile">
+            {% comment %} --- LANDSCAPE CAPTURES --- {% endcomment %}
+            <div class="column is-12">
+                <p class="is-size-6 has-text-weight-bold has-text-grey-darker mb-2">Landscape Orientation</p>
+            </div>
+            
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/landscape-p1-thumb.jpg' | relative_url }}" alt="Page 1 - Landscape Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1JHGYx_YnqgsRYmDlB9fla1JtlennOSy3/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-info mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Landscape Orientation, 2,596 KB)">Page 1 (2,596 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/landscape-p2-thumb.jpg' | relative_url }}" alt="Page 2 - Landscape Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/13wBdEs8WlGOTcUx0wnyJbICiYksQoylK/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-info mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Landscape Orientation, 2,317 KB)">Page 2 (2,317 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/landscape-p3-thumb.jpg' | relative_url }}" alt="Page 3 - Landscape Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/16jsB-4da4Q2tWpTRL2y21iltpnYgKNEt/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-info mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Landscape Orientation, 2,668 KB)">Page 3 (2,668 KB)</span>
+                </a>
+            </div>
+
+            {% comment %} --- PORTRAIT CAPTURES --- {% endcomment %}
+            <div class="column is-12">
+                <p class="is-size-6 has-text-weight-bold has-text-grey-darker mb-2 mt-4">Portrait Orientation</p>
+            </div>
+            
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-square mb-3" style="max-width: 150px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/portrait-p1-thumb.jpg' | relative_url }}" alt="Page 1 - Portrait Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1UowFxrTh2_OaINgqjG5Iso-mqoeV3TZF/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-link mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Portrait Orientation, 2,201 KB)">Page 1 (2,201 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-square mb-3" style="max-width: 150px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/portrait-p2-thumb.jpg' | relative_url }}" alt="Page 2 - Portrait Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1rjPDTfPTRf1Br2qOzxYshwUv4_pNjevW/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-link mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Portrait Orientation, 2,019 KB)">Page 2 (2,019 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-square mb-3" style="max-width: 150px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/portrait-p3-thumb.jpg' | relative_url }}" alt="Page 3 - Portrait Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1Ufwg5dJ38Gwj_bAl17rM7t9d3ZkmvzCx/view?usp=sharing" class="button is-fullwidth is-small is-outlined is-link mb-5" target="_blank">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span title="Mobile Capture (Portrait Orientation, 2,069 KB)">Page 3 (2,069 KB)</span>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="title is-4 mb-4 has-text-success">
+            2. Digitized, Aligned Copies <span class="tag is-success is-light ml-2">Archival Quality</span>
+        </h2>
+        <p class="subtitle is-7 has-text-grey mb-4">
+            These files have been processed, scanned, aligned, and optimized for maximum readability and archival purposes.
+        </p>
+
+        <div class="columns is-multiline is-mobile is-centered">
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/scan1-thumb.jpg' | relative_url }}" alt="Page 1 - Scan Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1NrqcCyndCNMPQ8n9i5RuCxN_t8Rywcs-/view?usp=sharing" class="button is-fullwidth is-medium is-success mb-3" target="_blank">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span title="Scanned Copy (Aligned and Optimized, 935 KB)">Page 1 (935 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/scan2-thumb.jpg' | relative_url }}" alt="Page 2 - Scan Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1egubLIPq3HBlCASNXhvNrr_-3CTb9esf/view?usp=sharing" class="button is-fullwidth is-medium is-success mb-3" target="_blank">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span title="Scanned Copy (Aligned and Optimized, 982 KB)">Page 2 (982 KB)</span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <figure class="image is-4by3 mb-3" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ '/assets/img/scan3-thumb.jpg' | relative_url }}" alt="Page 3 - Scan Thumbnail">
+                </figure>
+                
+                <a href="https://drive.google.com/file/d/1kAuaXpdtzBRaphA9-zDHUUdP4gwF2DeI/view?usp=sharing" class="button is-fullwidth is-medium is-success mb-3" target="_blank">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span title="Scanned Copy (Aligned and Optimized, 874 KB)">Page 3 (874 KB)</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
