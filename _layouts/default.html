@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> 
   </head>
   
-  <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col antialiased">
+  <body class="has-navbar-fixed-top" style="min-height: 100vh;">
     
-    <main class="flex-grow container mx-auto px-4 py-8">
-      {{ content }}
+    <main class="section">
+      <div class="container">
+        {{ content }}
+      </div>
     </main>
     
-    <footer class="bg-gray-200 border-t border-gray-300 mt-12 py-4">
-      <div class="container mx-auto px-4 text-center text-sm text-gray-600">
-        <p>&copy; {{ site.time | date: "%Y" }} **{{ site.title }}**</p>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="container">
+          <p class="is-size-7 has-text-grey">
+            &copy; {{ site.time | date: "%Y" }} **{{ site.title }}**
+          </p>
+        </div>
       </div>
     </footer>
   
