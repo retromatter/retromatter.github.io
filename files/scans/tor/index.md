@@ -1,0 +1,163 @@
+---
+layout: default
+title: NOVSCAN - Document Assets (Gallery)
+---
+
+<div class="container is-max-desktop">
+    <div class="section pt-5 pb-5">
+
+        <h1 class="title is-2 has-text-centered has-text-primary mb-2">
+            Document Imaging Gallery
+        </h1>
+        <p class="subtitle is-6 has-text-centered has-text-grey mb-6">
+            Preview the document pages below (3x3 Grid) or click to download the full-resolution file from Google Drive.
+        </p>
+
+        <div class="columns is-multiline is-mobile is-centered is-gapless">
+            
+            <div class="column is-4">
+                <div class="box p-0 has-background-info-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/1JHGYx_YnqgsRYmDlB9fla1JtlennOSy3/view?usp=sharing" target="_blank" title="Page 1 - Landscape Mobile (2,596 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/landscape-p1-thumb.jpg' | relative_url }}" alt="Landscape Page 1" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-info">Landscape P1</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-info-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/13wBdEs8WlGOTcUx0wnyJbICiYksQoylK/view?usp=sharing" target="_blank" title="Page 2 - Landscape Mobile (2,317 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/landscape-p2-thumb.jpg' | relative_url }}" alt="Landscape Page 2" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-info">Landscape P2</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-info-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/16jsB-4da4Q2tWpTRL2y21iltpnYgKNEt/view?usp=sharing" target="_blank" title="Page 3 - Landscape Mobile (2,668 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/landscape-p3-thumb.jpg' | relative_url }}" alt="Landscape Page 3" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-info">Landscape P3</p>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="box p-0 has-background-link-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/1UowFxrTh2_OaINgqjG5Iso-mqoeV3TZF/view?usp=sharing" target="_blank" title="Page 1 - Portrait Mobile (2,201 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/portrait-p1-thumb.jpg' | relative_url }}" alt="Portrait Page 1" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-link">Portrait P1</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-link-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/1rjPDTfPTRf1Br2qOzxYshwUv4_pNjevW/view?usp=sharing" target="_blank" title="Page 2 - Portrait Mobile (2,019 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/portrait-p2-thumb.jpg' | relative_url }}" alt="Portrait Page 2" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-link">Portrait P2</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-link-light has-text-centered is-clickable gallery-item">
+                    <a href="https://drive.google.com/file/d/1Ufwg5dJ38Gwj_bAl17rM7t9d3ZkmvzCx/view?usp=sharing" target="_blank" title="Page 3 - Portrait Mobile (2,069 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/portrait-p3-thumb.jpg' | relative_url }}" alt="Portrait Page 3" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-link">Portrait P3</p>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="box p-0 has-background-success-light has-text-centered is-clickable gallery-item">
+                    <a href="#modal-scan1" title="Click to Preview Scan 1 (935 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/scan1-thumb.jpg' | relative_url }}" alt="Scan Page 1" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-success">Scan 1</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-success-light has-text-centered is-clickable gallery-item">
+                    <a href="#modal-scan2" title="Click to Preview Scan 2 (982 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/scan2-thumb.jpg' | relative_url }}" alt="Scan Page 2" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-success">Scan 2</p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box p-0 has-background-success-light has-text-centered is-clickable gallery-item">
+                    <a href="#modal-scan3" title="Click to Preview Scan 3 (874 KB)">
+                        <figure class="image is-square">
+                            <img src="{{ '/assets/img/scan3-thumb.jpg' | relative_url }}" alt="Scan Page 3" class="is-rounded">
+                        </figure>
+                    </a>
+                    <p class="is-size-7 mt-2 has-text-weight-bold has-text-success">Scan 3</p>
+                </div>
+            </div>
+
+        </div> </div>
+</div>
+
+<div id="modal-scan1" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content is-medium">
+        <div class="box">
+            <p class="title is-4">Scanned Copy: Page 1 Preview</p>
+            <figure class="image">
+                 <iframe src="https://drive.google.com/file/d/1NrqcCyndCNMPQ8n9i5RuCxN_t8Rywcs-/preview" width="100%" height="480" allow="autoplay"></iframe>
+            </figure>
+            <a href="https://drive.google.com/file/d/1NrqcCyndCNMPQ8n9i5RuCxN_t8Rywcs-/view?usp=sharing" target="_blank" class="button is-fullwidth is-success mt-4">
+                <span class="icon"><i class="fas fa-download"></i></span>
+                <span>Download Full File (935 KB)</span>
+            </a>
+        </div>
+    </div>
+    <a href="#" class="modal-close is-large" aria-label="close"></a>
+</div>
+
+<div id="modal-scan2" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content is-medium">
+        <div class="box">
+            <p class="title is-4">Scanned Copy: Page 2 Preview</p>
+            <figure class="image">
+                 <iframe src="https://drive.google.com/file/d/1egubLIPq3HBlCASNXhvNrr_-3CTb9esf/preview" width="100%" height="480" allow="autoplay"></iframe>
+            </figure>
+            <a href="https://drive.google.com/file/d/1egubLIPq3HBlCASNXhvNrr_-3CTb9esf/view?usp=sharing" target="_blank" class="button is-fullwidth is-success mt-4">
+                <span class="icon"><i class="fas fa-download"></i></span>
+                <span>Download Full File (982 KB)</span>
+            </a>
+        </div>
+    </div>
+    <a href="#" class="modal-close is-large" aria-label="close"></a>
+</div>
+
+<div id="modal-scan3" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content is-medium">
+        <div class="box">
+            <p class="title is-4">Scanned Copy: Page 3 Preview</p>
+            <figure class="image">
+                 <iframe src="https://drive.google.com/file/d/1kAuaXpdtzBRaphA9-zDHUUdP4gwF2DeI/preview" width="100%" height="480" allow="autoplay"></iframe>
+            </figure>
+            <a href="https://drive.google.com/file/d/1kAuaXpdtzBRaphA9-zDHUUdP4gwF2DeI/view?usp=sharing" target="_blank" class="button is-fullwidth is-success mt-4">
+                <span class="icon"><i class="fas fa-download"></i></span>
+                <span>Download Full File (874 KB)</span>
+            </a>
+        </div>
+    </div>
+    <a href="#" class="modal-close is-large" aria-label="close"></a>
+</div>
