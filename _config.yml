@@ -1,6 +1,6 @@
 # Site settings
-title: RetroMatter
-description: 'retromatter by junlee' # This pulls directly from your README description
+title: →ジュンリー
+description: 'retromatter by Junlee' # This pulls directly from your README description
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://junl.ee" # The base hostname & protocol for your site
 
