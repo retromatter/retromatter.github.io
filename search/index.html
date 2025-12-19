@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canduman | Gugma sa PASKO verification</title>
+  
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+  <style>
+    body { font-family: sans-serif; padding: 20px; background-color: #f9f9f9; }
+    .container { max-width: 1400px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    /* THE BIG SEARCH BOX */
+    #searchContainer { width: 100%; margin-bottom: 30px; }
+    #customSearchBox { width: 100%; height: 80px; font-size: 1.8rem; padding: 15px 25px; border-radius: 15px; border: 4px solid #007bff; box-sizing: border-box; box-shadow: 0 4px 12px rgba(0,123,255,0.15); outline: none; }
+    /* TABLE CONTROLS */
+    .dt-search { display: none !important; } 
+    /* Hide default small box */
+    .dt-layout-row { margin-top: 10px; margin-bottom: 15px; }
+    .dt-layout-cell.dt-start { display: flex; justify-content: flex-start; }
+    /* TABLE STYLING */
+    table.dataTable thead th { background: #f8f9fa; border-bottom: 2px solid #dee2e6 !important; padding: 15px; text-transform: uppercase;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="margin-bottom: 20px; color: #333;">2023 Resident Database</h2>
+    <div id="searchContainer">
+      <input type="text" id="customSearchBox" placeholder="Type name, number, or sitio to search 5,000+ records...">
+    </div>
+    
+    <table id="myTable" class="display stripe" style="width:100%"></table>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  
+  <script>
+    $(document).ready(function() { 
+      const csvFile = 'data.csv';
+      Papa.parse(csvFile, {
+        download: true, 
+        header: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+          // 1. Get raw columns from CSV
+          const rawColumns = results.meta.fields;
+
+          // 2. FILTER: Remove 'Barangay' from the configuration
+          const filteredColumns = rawColumns.filter(colName => colName !== 'Barangay');
+
+          // 3. Map filtered columns to DataTables
+          const columnConfig = filteredColumns.map(colName => ({
+            data: colName,
+            title: colName
+          }));
+
+          const table = $('#myTable').DataTable({
+            data: results.data,
+            columns: columnConfig,
+            pageLength: 25,
+            lengthMenu: [10, 25, 50, 100, 500],
+            responsive: true,
+            layout: { topStart: 'length', topEnd: null, bottomStart: 'info', bottomEnd: 'paging' },
+            language: { lengthMenu: "Show _MENU_ entries" }
+          });
+
+          // Custom search box logic
+          $('#customSearchBox').on('keyup', function() { table.search(this.value).draw(); });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
