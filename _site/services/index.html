@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
+    <title>Our Professional Services</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> 
@@ -27,7 +27,16 @@
     
     <main class="section">
       <div class="container">
-        {{ content }}
+        <div class="space-y-6">
+  <h1 class="text-4xl font-bold border-b pb-2 mb-4 text-gray-900">Our Services</h1>
+  <p class="text-lg text-gray-600">Welcome to the Retromatter services page. We offer a range of professional solutions tailored to your needs.</p>
+  
+  <ul class="list-disc list-inside space-y-2">
+    <li><a href="/services/my-service-a.html" class="text-blue-600 hover:text-blue-800 font-medium">Service A: Web Design</a></li>
+    <li><a href="/services/my-service-b.html" class="text-blue-600 hover:text-blue-800 font-medium">Service B: Content Strategy</a></li>
+  </ul>
+</div>
+
       </div>
     </main>
     
@@ -35,10 +44,10 @@
       <div class="content has-text-centered">
         <div class="container">
           <p class="has-text-grey">
-            &copy; {{ site.time | date: "%Y" }}
+            &copy; 2026
           </p>
           <p class="has-text-grey">
-            <strong>{{ site.title }}.</strong>
+            <strong>→ジュンリー.</strong>
           </p>
         </div>
       </div>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>junl.ee</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+  <style>
+    /* 1. STICKY FOOTER LOGIC */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main.section {
+      flex: 1;
+    }
+
+    /* 2. EQUAL HEIGHT CARDS LOGIC */
+    .column.is-flex-card {
+      display: flex;
+    }
+
+    .column.is-flex-card .card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .column.is-flex-card .card-content {
+      flex-grow: 1;
+    }
+
+    /* Optional: Small gap fix for navbar fixed top */
+    body {
+      padding-top: 3.25rem;
+    }
+  </style>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="/"><strong>→ジュンリー</strong></a> -->
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="//blog.junl.ee/">blog</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+  <main class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        
+        <div class="column is-6-tablet is-3-desktop is-flex-card">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+              </figure>
+            </div>
+            <div class="card-content">
+              <!-- <div class="media">1</div> -->
+              <div class="content ">
+                This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column is-6-tablet is-3-desktop is-flex-card">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+              </figure>
+            </div>
+            <div class="card-content">
+              <!-- <div class="media">2</div> -->
+              <div class="content ">
+                This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column is-6-tablet is-3-desktop is-flex-card">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+              </figure>
+            </div>
+            <div class="card-content">
+              <!-- <div class="media">3</div> -->
+              <div class="content ">
+                This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column is-6-tablet is-3-desktop is-flex-card">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+              </figure>
+            </div>
+            <div class="card-content">
+              <!-- <div class="media">4</div> -->
+              <div class="content ">
+                This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <article class="message is-info">
+  <p class="message-header">Note:</p>
+  <p class="message-body">this site (junl.ee) acts a portal for old/future projects,pocs,demos made/updated through my work/comissions/hobbies.<br/>the "blog" (blog.junl.ee) is hosted and run through blogger (by google) <a href="//blogger.com" target="_blank" rel="noopener">blogger.com</a></p>
+</article>
+
+
+<!-- 
+
+<hr>
+### Recent Posts
+<ul>
+  
+    <li>
+      <a href="/2025/12/03/setup-start.html">Setup junl.ee</a> — 03 Dec 2025
+    </li>
+  
+</ul>
+
+-->
+
+    </div>
+  </main>
+
+    <style>
+    .footer {padding: 2rem;}
+  </style>
+  <footer class="footer">
+    <div class="container has-text-centered has-text-grey">
+      <p class="has-text-grey-darker">
+        <strong>→ジュンリー</strong>
+      </p>
+      <p class="has-text-grey-darker">
+        <a href="http://localhost:4000">retromatter by junl.ee</a>
+      </p>
+      <p class="has-text-grey is-size-7">&copy; 2026 | Built with Jekyll & Bulma</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>junl.ee</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+  <style>
+    /* 1. STICKY FOOTER LOGIC */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main.section {
+      flex: 1;
+    }
+
+    /* 2. EQUAL HEIGHT CARDS LOGIC */
+    .column.is-flex-card {
+      display: flex;
+    }
+
+    .column.is-flex-card .card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .column.is-flex-card .card-content {
+      flex-grow: 1;
+    }
+
+    /* Optional: Small gap fix for navbar fixed top */
+    body {
+      padding-top: 3.25rem;
+    }
+  </style>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  {% include navbar.html %}
+
+  <main class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        {% for i in (1..4) %}
+        <div class="column is-6-tablet is-3-desktop is-flex-card">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+              </figure>
+            </div>
+            <div class="card-content">
+              <!-- <div class="media">{{ i }}</div> -->
+              <div class="content ">
+                This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+      {{ content }}
+
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
