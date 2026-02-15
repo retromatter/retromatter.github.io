@@ -4,11 +4,10 @@ title: Setup junl.ee
 author: junlee
 ---
 
-<div class="max-w-3xl mx-auto">
-  <h1 class="text-3xl font-extrabold mb-4 text-gray-900">SETUP</h1>
+<div class="content">
+  <h1 class="title">SETUP</h1>
 
-  <p class="text-lg text-gray-700 leading-relaxed">12/03/2025 - junl.ee</p>
+  <p class="is-size-5 has-text-grey">12/03/2025 - junl.ee</p>
 
-  <p class="mt-4 text-gray-600">a work in progress.</p>
-
+  <p>a work in progress.</p>
 </div>

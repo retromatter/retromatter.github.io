@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        padding-top: 3.25rem; /* Space for fixed navbar */
       }
 
       /* This tells the main content area to grow and fill all available space */
@@ -25,24 +26,37 @@
   
   <body class="has-navbar-fixed-top">
     
+    {% include navbar.html %}
+
     <main class="section">
       <div class="container">
         {{ content }}
       </div>
     </main>
     
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <div class="container">
-          <p class="has-text-grey">
-            &copy; {{ site.time | date: "%Y" }}
-          </p>
-          <p class="has-text-grey">
-            <strong>{{ site.title }}.</strong>
-          </p>
-        </div>
-      </div>
-    </footer>
+    {% include footer.html %}
   
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
