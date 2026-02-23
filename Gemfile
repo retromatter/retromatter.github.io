@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # Core Jekyll dependency
-gem "jekyll", "~> 4.3.3"
+gem "jekyll", "~> 4"
 
 # Essential for Windows to prevent polling and reduce CPU usage
 gem "wdm", ">= 0.1.1" if Gem.win_platform?

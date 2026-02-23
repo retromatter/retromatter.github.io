@@ -1,20 +1,20 @@
 # Site settings
-description: 'retromatter by junl.ee - Archival Portal for Digital Preservation and Retrocomputing Projects.' # Updated description
+description: 'retromatter by junl.ee' # Updated description
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://junl.ee" # The base hostname & protocol for your site
 
 # SEO/Metadata Configuration
-title: "→ジュンリー | Digital Archive & Projects"
+title: "→ジュンリー |"
 author:
   name: "Junlee"
-  email: "junl.ee@gmail.com"
+  email: "hello@junl.ee"
 logo: "/favicon.ico"
-social:
-  name: "Retromatter"
-  links:
-    - "https://github.com/retromatter"
-    - "https://twitter.com/retromatter"
-    - "https://linkedin.com/in/junlee" # Placeholder, adjust if needed
+# social:
+  # name: "Retromatter"
+  # links:
+    # - "https://github.com/retromatter"
+    # - "https://twitter.com/retromatter"
+    # - "https://linkedin.com/in/junlee" # Placeholder, adjust if needed
 
 # Build settings
 plugins:
