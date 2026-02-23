@@ -11,10 +11,11 @@ gem "wdm", ">= 0.1.1" if Gem.win_platform?
 # Required for Ruby 3.0+ to run the local server
 gem "webrick", "~> 1.8"
 
-# Standard plugins for SEO and Feeds
+# Standard plugins for SEO, Feeds, and Sitemap
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
   # If you want to use the README as your index as discussed earlier:
   # gem "jekyll-readme-index"
 end
