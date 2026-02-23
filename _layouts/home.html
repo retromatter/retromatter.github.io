@@ -3,22 +3,73 @@ layout: default
 ---
 
 <div class="columns is-multiline">
-  {% for i in (1..4) %}
   <div class="column is-6-tablet is-3-desktop is-flex-card">
     <div class="card" style="height: 100%; display: flex; flex-direction: column;">
       <div class="card-image">
         <figure class="image is-4by3">
-          <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder">
+          <img src="{{ '/assets/img/scan1-thumb.jpg' | relative_url }}" alt="Document Scanning">
         </figure>
       </div>
       <div class="card-content" style="flex-grow: 1;">
+        <h3 class="title is-5">Document Scans</h3>
         <div class="content">
-          This card will stack on mobile, sit 2-per-row on tablet, and 4-per-row on desktop.
+          View our high-fidelity document digitization gallery.
         </div>
+        <a href="{{ '/files/scans/' | relative_url }}" class="button is-link is-small">Explore Gallery</a>
       </div>
     </div>
   </div>
-  {% endfor %}
+
+  <div class="column is-6-tablet is-3-desktop is-flex-card">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://via.placeholder.com/1280x960?text=Our+Services" alt="Services">
+        </figure>
+      </div>
+      <div class="card-content" style="flex-grow: 1;">
+        <h3 class="title is-5">Services</h3>
+        <div class="content">
+          Professional solutions tailored to your digital preservation needs.
+        </div>
+        <a href="{{ '/services/' | relative_url }}" class="button is-link is-small">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-6-tablet is-3-desktop is-flex-card">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://via.placeholder.com/1280x960?text=Strategic+Partners" alt="Partners">
+        </figure>
+      </div>
+      <div class="card-content" style="flex-grow: 1;">
+        <h3 class="title is-5">Partners</h3>
+        <div class="content">
+          Collaborating with industry leaders to deliver excellence.
+        </div>
+        <a href="{{ '/partners/' | relative_url }}" class="button is-link is-small">View Partners</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-6-tablet is-3-desktop is-flex-card">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://via.placeholder.com/1280x960?text=Visit+Our+Blog" alt="Blog">
+        </figure>
+      </div>
+      <div class="card-content" style="flex-grow: 1;">
+        <h3 class="title is-5">Blog</h3>
+        <div class="content">
+          Read our latest updates and insights on digital preservation.
+        </div>
+        <a href="https://blog.junl.ee/" class="button is-link is-small">Visit Blog</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 {{ content }}

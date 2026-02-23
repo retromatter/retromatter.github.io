@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        padding-top: 3.25rem; /* Space for fixed navbar */
       }
 
       /* This tells the main content area to grow and fill all available space */
@@ -25,32 +26,81 @@
   
   <body class="has-navbar-fixed-top">
     
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>→ジュンリー</strong>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="/services/">Services</a>
+        <a class="navbar-item" href="https://blog.junl.ee/">Blog</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
     <main class="section">
       <div class="container">
-        <div class="max-w-3xl mx-auto">
-  <h1 class="text-3xl font-extrabold mb-4 text-gray-900">SETUP</h1>
+        <div class="content">
+  <h1 class="title">SETUP</h1>
 
-  <p class="text-lg text-gray-700 leading-relaxed">12/03/2025 - junl.ee</p>
+  <p class="is-size-5 has-text-grey">12/03/2025 - junl.ee</p>
 
-  <p class="mt-4 text-gray-600">a work in progress.</p>
-
+  <p>a work in progress.</p>
 </div>
 
       </div>
     </main>
     
     <footer class="footer">
-      <div class="content has-text-centered">
-        <div class="container">
-          <p class="has-text-grey">
-            &copy; 2026
-          </p>
-          <p class="has-text-grey">
-            <strong>→ジュンリー.</strong>
-          </p>
-        </div>
-      </div>
-    </footer>
+  <div class="container has-text-centered">
+    <p>
+      <strong class="has-text-grey-darker">→ジュンリー</strong>
+    </p>
+    <p>
+      <a href="http://localhost:4000" class="has-text-grey-dark">retromatter by junl.ee</a>
+    </p>
+    <p class="is-size-7 has-text-grey">
+      &copy; 2026 | Built with <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://bulma.io/">Bulma</a>
+    </p>
+  </div>
+</footer>
+
   
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

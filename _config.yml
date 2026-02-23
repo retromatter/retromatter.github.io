@@ -1,19 +1,25 @@
 # Site settings
-title: →ジュンリー
-description: 'retromatter by junl.ee' # This pulls directly from your README description
+description: 'retromatter by junl.ee - Archival Portal for Digital Preservation and Retrocomputing Projects.' # Updated description
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://junl.ee" # The base hostname & protocol for your site
 
+# SEO/Metadata Configuration
+title: "→ジュンリー | Digital Archive & Projects"
+author:
+  name: "Junlee"
+  email: "junl.ee@gmail.com"
+logo: "/favicon.ico"
+social:
+  name: "Retromatter"
+  links:
+    - "https://github.com/retromatter"
+    - "https://twitter.com/retromatter"
+    - "https://linkedin.com/in/junlee" # Placeholder, adjust if needed
+
 # Build settings
-# Automatically uses the Jekyll theme defined for GitHub Pages
-# We recommend keeping this and configuring the theme below.
 plugins:
   - jekyll-feed
-
-# Theme settings
-# If you want to use the default theme (Jekyll-theme-primer for GitHub Pages), you can omit this,
-# but it's good practice to specify it. You can change this later!
-# remote_theme: pages-themes/primer@v9 # Example theme
+  - jekyll-seo-tag # Added for better metadata generation
 
 # Exclude files from the build process
 exclude:
