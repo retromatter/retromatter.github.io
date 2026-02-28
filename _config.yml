@@ -4,7 +4,7 @@ baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://junl.ee" # The base hostname & protocol for your site
 
 # SEO/Metadata Configuration
-title: "→ジュンリー |"
+title: "→ジュンリー"
 author:
   name: "Junlee"
   email: "hello@junl.ee"
