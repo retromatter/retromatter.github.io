@@ -1,29 +1,76 @@
 # Site settings
-description: 'retromatter by junl.ee' # Updated description
-baseurl: "" # The subpath of your site, e.g. /blog
-url: "https://junl.ee" # The base hostname & protocol for your site
+title: Retro Junlee
+description: >- 
+  Writing about web technology and personal experiences.
+lang: en-US
+timezone: Asia/Manila 
+image: /assets/img/ogp.png
+mode: light # Changed to dark to match your retro vibe ( dark | light )
 
-# SEO/Metadata Configuration
-title: "→ジュンリー"
+# Profile settings
 author:
-  name: "Junlee"
-  email: "hello@junl.ee"
-logo: "/favicon.ico"
-# social:
-  # name: "Retromatter"
-  # links:
-    # - "https://github.com/retromatter"
-    # - "https://twitter.com/retromatter"
-    # - "https://linkedin.com/in/junlee" # Placeholder, adjust if needed
+  name: Junlee
+  bio: >- 
+    Minimalist personal blog and documentation.
+  github: retromatter
+  email: your-email@email.com
+  avatar: /assets/img/avatar.jpg
 
-# Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag # Added for better metadata generation
+# URL settings (CRUCIAL FIX)
+url: "/" 
+baseurl: ""  # Set to empty for root domain
+# permalink: /:title/
+permalink: /blog/post/:year/:month/:day/:title/
 
-# Exclude files from the build process
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown & Build
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
+  quiet_deps: true # This hides warnings from dependencies/theme files
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default # Set default to your main layout
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+
+# Homepage limit
+number_of_posts: 5
+
+# Pagination
+paginate: 10
+paginate_path: /blog/page:num/
+
+# Files to handle
+include:
+  - _redirects
+  - .htaccess
+
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
+  - LICENSE
   - node_modules
+  - .jekyll-cache
+  - .jekyll-metadata
   - vendor/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate

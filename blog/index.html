@@ -1,15 +1,21 @@
 ---
-layout: default
-title: Redirecting to the Blog...
+title: Blog
+permalink: /blog/
+layout: page
+excerpt: All posts.
+comments: false
 ---
 
-<div class="content has-text-centered">
-  <p>This page has moved permanently.</p>
-  <p>Please click <a href="https://blog.junl.ee/">here</a> to visit the new blog.</p>
-</div>
+{% for post in paginator.posts %}
+<article class="post-item">
+  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+  <h4 class="post-item-title">
+    <a href="{{ post.url }}">{{ post.title | escape }}</a>
+  </h4>
+  {% if post.excerpt %}
+  <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  {% endif %}
+</article>
+{% endfor %}
 
-<script>
-  setTimeout(function() {
-    window.location.href = "https://blog.junl.ee/";
-  }, 5000);
-</script>
+{% include pagination.html %}

@@ -1,26 +1,19 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# Core Jekyll dependency
-gem "jekyll", "~> 4"
+gem "jekyll", "4.4.1"
+gem "webrick", "~> 1.7"
 
-# Essential for Windows to prevent polling and reduce CPU usage
-gem "wdm", ">= 0.1.1" if Gem.win_platform?
+# Windows-specific timezone support
+gem "tzinfo", "~> 2.0"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Required for Ruby 3.0+ to run the local server
-gem "webrick", "~> 1.8"
-
-# Standard plugins for SEO, Feeds, and Sitemap
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  # If you want to use the README as your index as discussed earlier:
-  # gem "jekyll-readme-index"
+  gem "jekyll-postfiles"
+  gem "jekyll-paginate"
 end
 
-# Optional: If you plan to deploy to GitHub Pages specifically, 
-# you can use this gem to align versions, but it can sometimes 
-# conflict with Jekyll 4.x. For now, Jekyll 4.3 is better for local dev.
-# gem "github-pages", group: :jekyll_plugins
+# Add this near your other Windows-specific gems
+gem "wdm", ">= 0.1.0", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

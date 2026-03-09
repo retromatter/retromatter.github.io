@@ -1,75 +1,14 @@
 ---
 layout: default
+home: true
 ---
-<!-- 
-<div class="columns is-multiline">
-  <div class="column is-6-tablet is-3-desktop is-flex-card">
-    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="{{ '/assets/img/scan1-thumb.jpg' | relative_url }}" alt="Document Scanning">
-        </figure>
-      </div>
-      <div class="card-content" style="flex-grow: 1;">
-        <h3 class="title is-5">Document Scans</h3>
-        <div class="content">
-          View our high-fidelity document digitization gallery.
-        </div>
-        <a href="{{ '/files/scans/' | relative_url }}" class="button is-link is-small">Explore Gallery</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="column is-6-tablet is-3-desktop is-flex-card">
-    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://via.placeholder.com/1280x960?text=Our+Services" alt="Services">
-        </figure>
-      </div>
-      <div class="card-content" style="flex-grow: 1;">
-        <h3 class="title is-5">Services</h3>
-        <div class="content">
-          Professional solutions tailored to your digital preservation needs.
-        </div>
-        <a href="{{ '/services/' | relative_url }}" class="button is-link is-small">Learn More</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="column is-6-tablet is-3-desktop is-flex-card">
-    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://via.placeholder.com/1280x960?text=Strategic+Partners" alt="Partners">
-        </figure>
-      </div>
-      <div class="card-content" style="flex-grow: 1;">
-        <h3 class="title is-5">Partners</h3>
-        <div class="content">
-          Collaborating with industry leaders to deliver excellence.
-        </div>
-        <a href="{{ '/partners/' | relative_url }}" class="button is-link is-small">View Partners</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="column is-6-tablet is-3-desktop is-flex-card">
-    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://via.placeholder.com/1280x960?text=Visit+Our+Blog" alt="Blog">
-        </figure>
-      </div>
-      <div class="card-content" style="flex-grow: 1;">
-        <h3 class="title is-5">Blog</h3>
-        <div class="content">
-          Read our latest updates and insights on digital preservation.
-        </div>
-        <a href="https://blog.junl.ee/" class="button is-link is-small">Visit Blog</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-{{ content }}
+<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+{%- for post in site.posts limit: site.number_of_posts -%}
+<article class="post-item">
+  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+  <h4 class="post-item-title">
+    <a href="{{ post.url }}">{{ post.title | escape }}</a>
+  </h4>
+</article>
+{%- endfor -%}

@@ -1,0 +1,19 @@
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a
+    class="page-previous"
+    href="{{ paginator.previous_page_path }}"
+  >
+    <span aria-hidden="true">←</span> NEWER POSTS
+  </a>
+  {% endif %}
+  <span class="page_number"
+    >PAGE {{ paginator.page }} OF {{ paginator.total_pages }}</span
+  >
+  {% if paginator.next_page %}
+  <a class="page-next" href="{{ paginator.next_page_path }}"
+    >OLDER POSTS
+    <span aria-hidden="true">→</span>
+  </a>
+  {% endif %}
+</div>
