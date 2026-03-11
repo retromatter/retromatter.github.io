@@ -17,8 +17,8 @@ author:
   avatar: /assets/img/avatar.jpg
 
 # URL settings (CRUCIAL FIX)
-url: "/" 
-baseurl: ""  # Set to empty for root domain
+url: "https://junl.ee"
+baseurl: ""
 # permalink: /:title/
 permalink: /blog/post/:year/:month/:day/:title/
 
