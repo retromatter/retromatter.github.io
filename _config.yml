@@ -1,0 +1,73 @@
+# Site settings
+title: Retromatter
+description: >-
+  Not so basic**
+lang: en-US
+timezone: Asia/Manila
+image: /assets/img/ogp.png
+theme: jekyll-theme-console-bulma
+
+# Profile settings
+author:
+  name: junl.ee
+  bio: >- 
+    Experiencing dev.
+  github: retromatter
+  email: hello@junl.ee
+  avatar: /assets/img/avatar.jpg
+
+# URL settings (CRUCIAL FIX)
+url: "https://junl.ee"
+baseurl: ""
+# permalink: /:title/
+permalink: /blog/post/:year/:month/:day/:title/
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown & Build
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
+  quiet_deps: true # This hides warnings from dependencies/theme files
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default # Set default to your main layout
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+
+# Pagination
+paginate: 10
+paginate_path: /blog/page:num/
+
+# Files to handle
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - .jekyll-cache
+  - .jekyll-metadata
+  - vendor/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate

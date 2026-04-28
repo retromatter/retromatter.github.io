@@ -1,0 +1,37 @@
+---
+title: Archive
+permalink: /archive/
+layout: default
+---
+
+<section class="section px-0 py-6">
+  <h1 class="title is-2">~/archive</h1>
+  <hr>
+
+  {%- assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+
+  {%- for year in postsByYear -%}
+  <div class="columns is-vcentered mb-2">
+    <div class="column is-narrow">
+      <strong>{{ year.name }}</strong>
+    </div>
+    <div class="column is-narrow">
+      <span class="is-size-7">{{ year.items | size }} post{% if year.items.size != 1 %}s{% endif %}</span>
+    </div>
+    <div class="column">
+      <details{% if forloop.first %} open{% endif %}>
+        <summary class="is-size-7" style="cursor:pointer; list-style:none;">[ view posts ]</summary>
+        <ul class="post-list mt-3">
+          {%- for post in year.items -%}
+          <li>
+            <span class="is-size-7">{{ post.date | date: "%b %-d" }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </details>
+    </div>
+  </div>
+  {%- endfor -%}
+
+</section>
